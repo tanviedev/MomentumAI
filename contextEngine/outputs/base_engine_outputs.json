@@ -1,0 +1,326 @@
+[
+  {
+    "content_id": "cnt_001",
+    "performance_status": "average",
+    "engagement_profile": {
+      "engagement_rate": 0.031,
+      "save_rate": 0.0028,
+      "share_rate": 0.0018,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  },
+  {
+    "content_id": "cnt_002",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.0434,
+      "save_rate": 0.0042,
+      "share_rate": 0.0057,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "strong",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "very_positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  },
+  {
+    "content_id": "cnt_003",
+    "performance_status": "underperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.0301,
+      "save_rate": 0.0054,
+      "share_rate": 0.0012,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "high",
+      "overposting_flag": true
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "mixed"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "fast"
+    }
+  },
+  {
+    "content_id": "cnt_004",
+    "performance_status": "average",
+    "engagement_profile": {
+      "engagement_rate": 0.0292,
+      "save_rate": 0.0044,
+      "share_rate": 0.0013,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "medium",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "medium"
+    }
+  },
+  {
+    "content_id": "cnt_005",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.1022,
+      "save_rate": 0.0196,
+      "share_rate": 0.0091,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "strong",
+      "dropoff_flag": false
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "very_positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "medium"
+    }
+  },
+  {
+    "content_id": "cnt_006",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.0829,
+      "save_rate": 0.0257,
+      "share_rate": 0.0039,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "educational",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "medium",
+      "overposting_flag": true
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  },
+  {
+    "content_id": "cnt_007",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.0991,
+      "save_rate": 0.0185,
+      "share_rate": 0.012,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "weak",
+      "dropoff_flag": true
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "very_positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  },
+  {
+    "content_id": "cnt_008",
+    "performance_status": "average",
+    "engagement_profile": {
+      "engagement_rate": 0.0637,
+      "save_rate": 0.0115,
+      "share_rate": 0.0041,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": false
+    },
+    "topic_health": {
+      "fatigue_level": "high",
+      "overposting_flag": true
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "neutral"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "fast"
+    }
+  },
+  {
+    "content_id": "cnt_009",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.0664,
+      "save_rate": 0.0043,
+      "share_rate": 0.015,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "strong",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "medium",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "mixed"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "medium"
+    }
+  },
+  {
+    "content_id": "cnt_010",
+    "performance_status": "average",
+    "engagement_profile": {
+      "engagement_rate": 0.0638,
+      "save_rate": 0.0045,
+      "share_rate": 0.0163,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "viral",
+    "hook_analysis": {
+      "hook_strength": "medium",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "medium",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "medium"
+    }
+  },
+  {
+    "content_id": "cnt_011",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.062,
+      "save_rate": 0.0063,
+      "share_rate": 0.0054,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "inspirational",
+    "hook_analysis": {
+      "hook_strength": "strong",
+      "dropoff_flag": null
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "very_positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  },
+  {
+    "content_id": "cnt_012",
+    "performance_status": "outperforming",
+    "engagement_profile": {
+      "engagement_rate": 0.1027,
+      "save_rate": 0.0297,
+      "share_rate": 0.0058,
+      "dominant_engagement": "likes"
+    },
+    "content_value_type": "educational",
+    "hook_analysis": {
+      "hook_strength": "strong",
+      "dropoff_flag": false
+    },
+    "topic_health": {
+      "fatigue_level": "low",
+      "overposting_flag": false
+    },
+    "audience_alignment": {
+      "intent_match": "aligned",
+      "comment_sentiment": "positive"
+    },
+    "distribution_health": {
+      "timing_quality": "good",
+      "decay_pattern": "slow"
+    }
+  }
+]

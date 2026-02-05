@@ -1,0 +1,14 @@
+[
+  {"content_id":"cnt_001","impressions":18500,"reach":14200,"likes":420,"comments":68,"shares":34,"saves":52,"watch_time":null,"dropoff_rate":null,"CTR":0.018},
+  {"content_id":"cnt_002","impressions":21000,"reach":16500,"likes":610,"comments":94,"shares":120,"saves":88,"watch_time":null,"dropoff_rate":null,"CTR":0.021},
+  {"content_id":"cnt_003","impressions":12000,"reach":9800,"likes":260,"comments":22,"shares":14,"saves":65,"watch_time":null,"dropoff_rate":null,"CTR":0.009},
+  {"content_id":"cnt_004","impressions":9000,"reach":7200,"likes":180,"comments":31,"shares":12,"saves":40,"watch_time":null,"dropoff_rate":null,"CTR":0.034},
+  {"content_id":"cnt_005","impressions":46000,"reach":38000,"likes":3200,"comments":180,"shares":420,"saves":900,"watch_time":21.5,"dropoff_rate":0.28,"CTR":0.012},
+  {"content_id":"cnt_006","impressions":28000,"reach":22000,"likes":1400,"comments":90,"shares":110,"saves":720,"watch_time":null,"dropoff_rate":null,"CTR":0.016},
+  {"content_id":"cnt_007","impressions":65000,"reach":52000,"likes":4100,"comments":360,"shares":780,"saves":1200,"watch_time":612,"dropoff_rate":0.41,"CTR":0.056},
+  {"content_id":"cnt_008","impressions":39000,"reach":31000,"likes":1800,"comments":75,"shares":160,"saves":450,"watch_time":19.2,"dropoff_rate":0.33,"CTR":0.008},
+  {"content_id":"cnt_009","impressions":14000,"reach":11000,"likes":520,"comments":140,"shares":210,"saves":60,"watch_time":null,"dropoff_rate":null,"CTR":0.011},
+  {"content_id":"cnt_010","impressions":16000,"reach":13000,"likes":640,"comments":48,"shares":260,"saves":72,"watch_time":null,"dropoff_rate":null,"CTR":0.014},
+  {"content_id":"cnt_011","impressions":17500,"reach":13800,"likes":720,"comments":160,"shares":95,"saves":110,"watch_time":null,"dropoff_rate":null,"CTR":0.019},
+  {"content_id":"cnt_012","impressions":33000,"reach":27000,"likes":2100,"comments":120,"shares":190,"saves":980,"watch_time":23.8,"dropoff_rate":0.25,"CTR":0.015}
+]

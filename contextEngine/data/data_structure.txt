@@ -1,0 +1,83 @@
+| Layer | Table                   | Role                 |
+| ----- | ----------------------- | -------------------- |
+| A     | Content Metadata        | What was posted      |
+| B     | Contextual Intent       | Why it was posted    |
+| C     | Temporal & Distribution | When & how           |
+| D     | Performance Metrics     | What happened        |
+| E     | Relative Performance    | How good/bad it was  |
+| F     | Historical Memory       | What happened before |
+| G     | Qualitative Signals     | Human meaning        |
+
+| Layer | Meaning                    |
+| ----- | -------------------------- |
+| H     | Why it failed or succeeded |
+| H     | What drove performance     |
+| H     | What to do next            |
+
+A. Content Metadata (WHAT was posted)
+Field	Why it matters
+content_id	Primary key
+platform	Platform behavior differs
+content_type	Reel, post, carousel
+topic_category	Pattern recognition
+format_style	Educational, emotional, storytelling
+hook_type	Critical for performance
+CTA_type	Conversion driver
+content_length	Platform-sensitive
+language	Engagement impact
+hashtags_used	Discovery impact
+media_type	Image/video/text
+
+
+B. Contextual Intent (WHY it was posted)
+Field	Why
+content_goal	Reach / engagement / conversion
+target_audience_type	New vs returning
+audience_skill_level	Beginner/intermediate
+emotional_intent	Inspire, educate, provoke
+brand_voice	Consistency tracking
+
+C. Temporal & Distribution Data (WHEN & HOW)
+Field	Why
+posting_datetime	Timing patterns
+timezone	Crucial for global users
+day_of_week	Behavioral trends
+posting_frequency	Fatigue detection
+paid_or_organic	Performance normalization
+
+
+D. Performance Metrics (WHAT happened)
+Field	Why
+impressions	Reach baseline
+reach	Visibility
+likes	Engagement quality
+comments	Depth
+shares	Virality
+saves	Intent signal
+watch_time	Video quality
+dropoff_rate	Hook strength
+CTR	Conversion intent
+
+
+E. Relative Performance (This unlocks insight)
+Field	Why
+performance_vs_avg	Contextual normalization
+performance_vs_top10	Benchmarking
+engagement_velocity	Early signal
+decay_rate	Longevity
+
+
+F. Historical Memory (LLM Superpower)
+Field	Why
+similar_past_posts	Pattern matching
+past_hook_performance	Hook intelligence
+best_time_slots	Timing memory
+topic_fatigue_score	Overposting detection
+
+
+G. Qualitative Signals (Meaning Layer)
+Field	Why
+comment_sentiment	Audience emotion
+comment_themes	Feedback extraction
+audience_questions	Content gaps
+negative_feedback_flags	Risk detection

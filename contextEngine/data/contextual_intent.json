@@ -1,0 +1,14 @@
+[
+  {"content_id":"cnt_001","content_goal":"engagement","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"educate","brand_voice":"professional"},
+  {"content_id":"cnt_002","content_goal":"reach","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"inspire","brand_voice":"friendly"},
+  {"content_id":"cnt_003","content_goal":"engagement","target_audience_type":"returning","audience_skill_level":"intermediate","emotional_intent":"provoke","brand_voice":"casual"},
+  {"content_id":"cnt_004","content_goal":"conversion","target_audience_type":"returning","audience_skill_level":"intermediate","emotional_intent":"educate","brand_voice":"authoritative"},
+  {"content_id":"cnt_005","content_goal":"reach","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"inspire","brand_voice":"energetic"},
+  {"content_id":"cnt_006","content_goal":"engagement","target_audience_type":"returning","audience_skill_level":"intermediate","emotional_intent":"educate","brand_voice":"professional"},
+  {"content_id":"cnt_007","content_goal":"conversion","target_audience_type":"returning","audience_skill_level":"advanced","emotional_intent":"educate","brand_voice":"authoritative"},
+  {"content_id":"cnt_008","content_goal":"reach","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"entertain","brand_voice":"casual"},
+  {"content_id":"cnt_009","content_goal":"engagement","target_audience_type":"new","audience_skill_level":"intermediate","emotional_intent":"provoke","brand_voice":"bold"},
+  {"content_id":"cnt_010","content_goal":"reach","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"educate","brand_voice":"professional"},
+  {"content_id":"cnt_011","content_goal":"engagement","target_audience_type":"returning","audience_skill_level":"intermediate","emotional_intent":"inspire","brand_voice":"friendly"},
+  {"content_id":"cnt_012","content_goal":"engagement","target_audience_type":"new","audience_skill_level":"beginner","emotional_intent":"educate","brand_voice":"energetic"}
+]

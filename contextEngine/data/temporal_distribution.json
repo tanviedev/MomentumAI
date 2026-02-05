@@ -1,0 +1,14 @@
+[
+  {"content_id":"cnt_001","posting_datetime":"2026-01-03T18:30:00","timezone":"Asia/Kolkata","day_of_week":"Friday","posting_frequency":4,"paid_or_organic":"organic"},
+  {"content_id":"cnt_002","posting_datetime":"2026-01-05T09:00:00","timezone":"Asia/Kolkata","day_of_week":"Sunday","posting_frequency":3,"paid_or_organic":"organic"},
+  {"content_id":"cnt_003","posting_datetime":"2026-01-06T20:15:00","timezone":"Asia/Kolkata","day_of_week":"Monday","posting_frequency":5,"paid_or_organic":"organic"},
+  {"content_id":"cnt_004","posting_datetime":"2026-01-08T07:45:00","timezone":"Asia/Kolkata","day_of_week":"Wednesday","posting_frequency":4,"paid_or_organic":"organic"},
+  {"content_id":"cnt_005","posting_datetime":"2026-01-09T19:00:00","timezone":"Asia/Kolkata","day_of_week":"Thursday","posting_frequency":6,"paid_or_organic":"organic"},
+  {"content_id":"cnt_006","posting_datetime":"2026-01-10T11:30:00","timezone":"Asia/Kolkata","day_of_week":"Friday","posting_frequency":5,"paid_or_organic":"organic"},
+  {"content_id":"cnt_007","posting_datetime":"2026-01-11T16:00:00","timezone":"Asia/Kolkata","day_of_week":"Saturday","posting_frequency":2,"paid_or_organic":"paid"},
+  {"content_id":"cnt_008","posting_datetime":"2026-01-12T13:20:00","timezone":"Asia/Kolkata","day_of_week":"Sunday","posting_frequency":6,"paid_or_organic":"organic"},
+  {"content_id":"cnt_009","posting_datetime":"2026-01-13T21:10:00","timezone":"Asia/Kolkata","day_of_week":"Monday","posting_frequency":7,"paid_or_organic":"organic"},
+  {"content_id":"cnt_010","posting_datetime":"2026-01-14T10:40:00","timezone":"Asia/Kolkata","day_of_week":"Tuesday","posting_frequency":6,"paid_or_organic":"organic"},
+  {"content_id":"cnt_011","posting_datetime":"2026-01-15T18:50:00","timezone":"Asia/Kolkata","day_of_week":"Wednesday","posting_frequency":4,"paid_or_organic":"organic"},
+  {"content_id":"cnt_012","posting_datetime":"2026-01-16T06:30:00","timezone":"Asia/Kolkata","day_of_week":"Thursday","posting_frequency":5,"paid_or_organic":"organic"}
+]

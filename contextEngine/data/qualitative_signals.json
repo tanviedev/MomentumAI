@@ -1,0 +1,14 @@
+[
+  {"content_id":"cnt_001","comment_sentiment":"positive","comment_themes":["career growth","ai skills"],"audience_questions":["How to start learning AI?"],"negative_feedback_flags":[]},
+  {"content_id":"cnt_002","comment_sentiment":"very_positive","comment_themes":["personal journey","branding"],"audience_questions":[],"negative_feedback_flags":[]},
+  {"content_id":"cnt_003","comment_sentiment":"mixed","comment_themes":["work habits","burnout"],"audience_questions":["Is this sustainable?"],"negative_feedback_flags":["controversial_opinion"]},
+  {"content_id":"cnt_004","comment_sentiment":"positive","comment_themes":["career advice"],"audience_questions":["Can you share examples?"],"negative_feedback_flags":[]},
+  {"content_id":"cnt_005","comment_sentiment":"very_positive","comment_themes":["motivation","discipline"],"audience_questions":[],"negative_feedback_flags":[]},
+  {"content_id":"cnt_006","comment_sentiment":"positive","comment_themes":["design tips","tools"],"audience_questions":["Which software is best?"],"negative_feedback_flags":[]},
+  {"content_id":"cnt_007","comment_sentiment":"very_positive","comment_themes":["learning path","coding"],"audience_questions":["Beginner roadmap?"],"negative_feedback_flags":[]},
+  {"content_id":"cnt_008","comment_sentiment":"neutral","comment_themes":["ai news"],"audience_questions":[],"negative_feedback_flags":[]},
+  {"content_id":"cnt_009","comment_sentiment":"mixed","comment_themes":["startup culture"],"audience_questions":["Is this realistic?"],"negative_feedback_flags":["polarizing_content"]},
+  {"content_id":"cnt_010","comment_sentiment":"positive","comment_themes":["marketing stats"],"audience_questions":[],"negative_feedback_flags":[]},
+  {"content_id":"cnt_011","comment_sentiment":"very_positive","comment_themes":["leadership","empathy"],"audience_questions":["How to apply this?"],"negative_feedback_flags":[]},
+  {"content_id":"cnt_012","comment_sentiment":"positive","comment_themes":["fitness routine"],"audience_questions":["Home workouts?"],"negative_feedback_flags":[]}
+]

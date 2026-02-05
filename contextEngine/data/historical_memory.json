@@ -1,0 +1,14 @@
+[
+  {"content_id":"cnt_001","similar_past_posts":5,"past_hook_performance":"high","best_time_slots":["18:00-20:00"],"topic_fatigue_score":0.22},
+  {"content_id":"cnt_002","similar_past_posts":3,"past_hook_performance":"high","best_time_slots":["09:00-11:00"],"topic_fatigue_score":0.18},
+  {"content_id":"cnt_003","similar_past_posts":8,"past_hook_performance":"medium","best_time_slots":["20:00-22:00"],"topic_fatigue_score":0.61},
+  {"content_id":"cnt_004","similar_past_posts":6,"past_hook_performance":"medium","best_time_slots":["07:00-09:00"],"topic_fatigue_score":0.44},
+  {"content_id":"cnt_005","similar_past_posts":4,"past_hook_performance":"high","best_time_slots":["19:00-21:00"],"topic_fatigue_score":0.25},
+  {"content_id":"cnt_006","similar_past_posts":7,"past_hook_performance":"high","best_time_slots":["11:00-13:00"],"topic_fatigue_score":0.38},
+  {"content_id":"cnt_007","similar_past_posts":2,"past_hook_performance":"very_high","best_time_slots":["15:00-17:00"],"topic_fatigue_score":0.12},
+  {"content_id":"cnt_008","similar_past_posts":9,"past_hook_performance":"medium","best_time_slots":["12:00-14:00"],"topic_fatigue_score":0.57},
+  {"content_id":"cnt_009","similar_past_posts":5,"past_hook_performance":"high","best_time_slots":["21:00-23:00"],"topic_fatigue_score":0.33},
+  {"content_id":"cnt_010","similar_past_posts":6,"past_hook_performance":"medium","best_time_slots":["10:00-12:00"],"topic_fatigue_score":0.41},
+  {"content_id":"cnt_011","similar_past_posts":3,"past_hook_performance":"very_high","best_time_slots":["18:00-20:00"],"topic_fatigue_score":0.19},
+  {"content_id":"cnt_012","similar_past_posts":4,"past_hook_performance":"high","best_time_slots":["06:00-08:00"],"topic_fatigue_score":0.27}
+]

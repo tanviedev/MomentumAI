@@ -1,0 +1,61 @@
+{
+  "content_id": "string",
+
+  "overall_verdict": "success | average | failure",
+
+  "performance_explanation": {
+    "summary": "string",
+    "key_reasons": ["string", "string"]
+  },
+
+  "primary_drivers": {
+    "positive_drivers": ["string"],
+    "negative_drivers": ["string"]
+  },
+
+  "content_diagnosis": {
+    "hook_quality": "strong | medium | weak",
+    "content_value_alignment": "string",
+    "audience_response": "string"
+  },
+
+  "distribution_diagnosis": {
+    "timing_effectiveness": "good | average | poor",
+    "longevity_assessment": "string"
+  },
+
+  "recommended_actions": {
+    "content_changes": ["string"],
+    "distribution_changes": ["string"],
+    "experiments_to_try": ["string"]
+  },
+
+  "confidence_score": 0.0
+}
+
+
+
+
+overall_verdict
+→ human-friendly label for dashboards
+
+performance_explanation.summary
+→ one-paragraph explanation
+
+key_reasons
+→ bullet-style causal reasoning
+
+primary_drivers
+→ what helped vs what hurt (critical for learning loops)
+
+content_diagnosis
+→ insight on the post itself
+
+distribution_diagnosis
+→ insight on how it was posted
+
+recommended_actions
+→ what to do next (but grounded in data)
+
+confidence_score
+→ how certain the LLM is (important later)

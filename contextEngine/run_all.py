@@ -19,7 +19,7 @@ def run_for_all():
 if __name__ == "__main__":
     engine_outputs = run_for_all()
 
-    with open("base_engine_outputs.json", "w") as f:
+    with open("outputs/base_engine_outputs.json", "w") as f:
         json.dump(engine_outputs, f, indent=2)
 
     print(f"Generated outputs for {len(engine_outputs)} posts")

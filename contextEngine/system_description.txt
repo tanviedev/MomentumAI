@@ -1,0 +1,12 @@
+| Layer                                   | Role               | Deterministic? | Hallucination risk |
+| --------------------------------------- | ------------------ | -------------- | ------------------ |
+| Base Engine (A–G → intermediate output) | Interprets data    | ❌ No           | Zero               |
+| LLM Insight Layer (H)                   | Explains & advises | ✅ Yes          | Controlled         |
+
+
+| Question                            | Source               |
+| ----------------------------------- | -------------------- |
+| Why did this post perform this way? | Base engine output   |
+| What factors mattered most?         | Interpreting labels  |
+| What should I do next?              | Pattern-based advice |
+| How do I explain this to a human?   | Natural language     |

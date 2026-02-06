@@ -11,7 +11,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "medium",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "low",
@@ -38,7 +38,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "strong",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "low",
@@ -65,7 +65,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "medium",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "high",
@@ -92,7 +92,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "medium",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "medium",
@@ -146,10 +146,10 @@
     "content_value_type": "educational",
     "hook_analysis": {
       "hook_strength": "medium",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
-      "fatigue_level": "medium",
+      "fatigue_level": "high",
       "overposting_flag": true
     },
     "audience_alignment": {
@@ -227,7 +227,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "strong",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "medium",
@@ -254,7 +254,7 @@
     "content_value_type": "viral",
     "hook_analysis": {
       "hook_strength": "medium",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "medium",
@@ -281,7 +281,7 @@
     "content_value_type": "inspirational",
     "hook_analysis": {
       "hook_strength": "strong",
-      "dropoff_flag": null
+      "dropoff_flag": false
     },
     "topic_health": {
       "fatigue_level": "low",

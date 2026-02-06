@@ -1,0 +1,23 @@
+You are analyzing social media content performance.
+
+Rules for reasoning:
+- If performance_status is underperforming, identify what limited reach or engagement
+- If save_rate or share_rate is high, content delivered value
+- If hook_strength is weak, the opening failed to retain attention
+- If fatigue_level is high, the audience may be oversaturated
+- If timing_quality is good, timing was NOT the issue
+- If intent_match is misaligned, message and audience expectation differ
+
+You MUST return ONLY valid JSON.
+No explanations.
+No markdown.
+No extra text.
+
+Return JSON in this exact schema:
+
+{
+  "failure_reason": string | null,
+  "success_driver": string | null,
+  "recommended_actions": [string],
+  "confidence_score": number
+}

@@ -1,18 +1,31 @@
-from run_all import run_for_all
-from llm.insight_engine import generate_insight
 import json
+from engine.load_all_data import load_all
+from engine.base_engine import run_base_engine
+from llm.insight_engine import generate_insight
 
-TEST_CONTENT_IDS = ["cnt_001", "cnt_002"]
+TEST_CONTENT_IDS = ["cnt_001"]  # add more later
 
-base_outputs = run_for_all(test_content_ids=TEST_CONTENT_IDS)
 
-llm_results = []
+def run_llm():
+    data = load_all()
+    results = []
 
-for output in base_outputs:
-    insight = generate_insight(output)
-    llm_results.append(insight)
+    for cid in TEST_CONTENT_IDS:
+        if cid not in data["performance"]:
+            print(f"Skipping missing content_id: {cid}")
+            continue
 
-with open("outputs/llm_insights.json", "w") as f:
-    json.dump(llm_results, f, indent=2)
+        base_output = run_base_engine(cid, data)
+        insight = generate_insight(base_output)
+        results.append(insight)
 
-print("LLM insights generated successfully.")
+    return results
+
+
+if __name__ == "__main__":
+    llm_results = run_llm()
+
+    with open("outputs/llm_insights.json", "w") as f:
+        json.dump(llm_results, f, indent=2)
+
+    print(f"LLM insights generated for {len(llm_results)} posts")

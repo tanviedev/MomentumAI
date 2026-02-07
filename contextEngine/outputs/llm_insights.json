@@ -1,15 +1,11 @@
 [
   {
-    "content_id": "cnt_001",
+    "content_id": "cnt_002",
     "llm_insight": {
-      "failure_reason": "lack of engagement",
-      "success_driver": "inspirational content",
-      "recommended_actions": [
-        "Increase the frequency of posting to keep audience engaged",
-        "Incorporate more interactive elements in the content to increase engagement",
-        "Analyze the target audience's preferences and tailor the content accordingly"
-      ],
-      "confidence_score": 0.6
+      "failure_reason": null,
+      "success_driver": "Timing was NOT the issue",
+      "recommended_actions": [],
+      "confidence_score": 1.0
     }
   }
 ]

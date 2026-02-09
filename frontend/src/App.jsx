@@ -226,7 +226,34 @@ export default function App() {
       {insights && (
         <div className="card">
           <h2>LLM Insights</h2>
-          <pre>{JSON.stringify(insights, null, 2)}</pre>
+          <div className="insights">
+            <div className="insight-item">
+              <div className="insight-title">Why it underperformed</div>
+              <div className="insight-muted">{insights.llm_insight.failure_reason}</div>
+            </div>
+
+            <div className="insight-item">
+              <div className="insight-title">What worked</div>
+              <div className="insight-muted">{insights.llm_insight.success_driver}</div>
+            </div>
+
+            <div className="insight-item">
+              <div className="insight-title">Recommended Actions</div>
+              <ul className="insight-muted">
+                {insights.llm_insight.recommended_actions.map((a, i) => (
+                  <li key={i}>• {a}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="insight-item">
+              <div className="insight-title">Confidence Score</div>
+              <div className="insight-muted">
+                {(insights.llm_insight.confidence_score * 100).toFixed(0)}%
+              </div>
+            </div>
+        </div>
+
         </div>
       )}
 

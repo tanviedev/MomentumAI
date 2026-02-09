@@ -1,214 +1,145 @@
-/* ---------- GLOBAL ---------- */
-* {
-  box-sizing: border-box;
+/* ----------- ROOT ----------- */
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --accent: #6366f1;
+  --border: #1f2933;
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(180deg, #f8fafc, #ffffff);
-  color: #0f172a;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
 }
 
+/* ----------- APP CONTAINER ----------- */
 .app-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
-/* ---------- HEADER ---------- */
-.header {
-  text-align: center;
-  margin-bottom: 3.5rem;
-}
-
-.header h1 {
-  font-size: 2.4rem;
+h1 {
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
 }
 
-.subtitle {
-  margin-top: 0.8rem;
-  font-size: 1rem;
-  color: #475569;
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-/* ---------- LINK SELECT ---------- */
-.link-selector {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
-
-.link-selector select {
-  min-width: 360px;
-  padding: 0.85rem 1.2rem;
-  font-size: 0.95rem;
-  border-radius: 12px;
-  border: 1px solid #cbd5f5;
-  background: #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
-}
-
-.link-selector select:focus {
-  outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
-}
-
-/* ---------- SECTIONS ---------- */
-.section {
-  margin-bottom: 3.5rem;
-}
-
-.section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
-}
-
-/* ---------- SIGNAL GRID ---------- */
-.signal-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-bottom: 3rem;
-}
-
-/* ---------- CARD ---------- */
+/* ----------- CARDS ----------- */
 .card {
-  background: #ffffff;
+  background: linear-gradient(180deg, #111827, #0b1220);
+  border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 1.8rem 2rem;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1.4rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 1.6rem 0 0.8rem;
+  color: var(--accent);
 }
 
-/* ---------- FORM ELEMENTS ---------- */
+/* ----------- FORM GRID ----------- */
 .card label {
-  display: block;
   font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #64748b;
-  margin-bottom: 0.35rem;
-  margin-top: 1.1rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
 }
 
 .card input,
 .card select {
-  width: 100%;
-  padding: 0.55rem 0.65rem;
-  font-size: 0.95rem;
+  background: #020617;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.55rem 0.7rem;
   border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  transition: border 0.15s ease, box-shadow 0.15s ease;
+  font-size: 0.9rem;
 }
 
 .card input:focus,
 .card select:focus {
   outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+  border-color: var(--accent);
 }
 
-/* ---------- PERFORMANCE STATUS ---------- */
-.section input {
-  max-width: 280px;
+/* signals layout */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem 1.3rem;
 }
 
-/* ---------- CTA ---------- */
-.cta {
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0 3rem;
+.card h2,
+.card h3 {
+  grid-column: 1 / -1;
 }
 
-.cta button {
-  padding: 1rem 3rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
+/* ----------- BUTTON ----------- */
+.analyze-btn {
+  width: 100%;
   background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border: none;
   color: white;
-  box-shadow: 0 16px 32px rgba(99, 102, 241, 0.3);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 1.5rem 0 2rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(99,102,241,0.4);
 }
 
-.cta button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.35);
-}
-
-.cta button:disabled {
+.analyze-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* ---------- INSIGHTS ---------- */
+/* ----------- LLM INSIGHTS ----------- */
 .insights {
-  background: linear-gradient(135deg, #eef2ff, #f8fafc);
-  border-radius: 18px;
-  padding: 2.5rem;
-  border: 1px solid #e0e7ff;
+  display: grid;
+  gap: 1rem;
 }
 
-.insights h2 {
-  margin-bottom: 1rem;
+.insight-item {
+  background: #020617;
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
 }
 
-.insights p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #1e293b;
+.insight-title {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
 
-/* ---------- CHARTS ---------- */
+.insight-muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ----------- CHARTS ----------- */
 .charts-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .chart-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 1.5rem 1.8rem;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
-}
-
-.chart-card h3 {
-  margin-bottom: 0.6rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 900px) {
-  .signal-grid,
-  .charts-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .link-selector select {
-    min-width: 100%;
-  }
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
 }

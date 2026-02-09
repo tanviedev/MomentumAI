@@ -14,7 +14,7 @@ export default function EngagementChart({ engagement }) {
         <BarChart data={data}>
           <XAxis dataKey="name" />
           <Tooltip />
-          <Bar dataKey="value" radius={[6, 6, 0, 0]} />
+          <Bar dataKey="value" radius={[8, 8, 0, 0]} barSize={48} />
         </BarChart>
       </ResponsiveContainer>
     </div>

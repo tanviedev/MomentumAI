@@ -10,3 +10,5 @@
 | What factors mattered most?         | Interpreting labels  |
 | What should I do next?              | Pattern-based advice |
 | How do I explain this to a human?   | Natural language     |
+
+

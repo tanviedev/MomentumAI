@@ -1,0 +1,55 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f7f7f7;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 14px;
+    border: none;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  section {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background: #fafafa;
+  }
+  
+  .hint {
+    font-size: 0.85em;
+    color: #666;
+  }
+  

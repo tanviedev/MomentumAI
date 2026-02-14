@@ -14,7 +14,7 @@ def load_prompt() -> str:
         return f.read()
 
 
-def generate_insight(base_output: dict) -> dict:
+def generate_wording(base_output: dict) -> dict:
     """
     Takes base engine output and returns structured LLM insight.
     Safe, deterministic, and beginner-proof.

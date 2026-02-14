@@ -4,7 +4,7 @@ import joblib
 from features.feature_engineering import engineer_features
 from models.classifier import train_classifier
 
-DATA_PATH = "/Users/janhavee/Desktop/digiBot/ai_engagement_analyst/data/engagement_dataset.csv"
+DATA_PATH = "data/engagement_dataset.csv"
 MODEL_PATH = "models/performance_classifier.pkl"
 
 def main():

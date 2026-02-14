@@ -1,8 +1,12 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from data.content_store import CONTENT_DB
+from llm.insight_engine import generate_wording
+from pydantic import BaseModel
+from fastapi import Body
+from typing import Dict, Any
 import pandas as pd
 import joblib
-
-from fastapi.middleware.cors import CORSMiddleware
 
 from features.feature_engineering import engineer_features
 from models.reasoning_engine import generate_reasoning, generate_hint
@@ -10,13 +14,16 @@ from insights.insight_generator import generate_insight
 from utils.config import LABEL_OUTPERFORMING, LABEL_UNDERPERFORMING
 
 app = FastAPI()
+
+# allow frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow frontend to talk to backend
-    allow_credentials=True,
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,
 )
+
 
 # -------------------------
 # Data & Model Loading
@@ -160,3 +167,38 @@ def next_post_to_fix():
         "reason": insight["success_driver"],
         "recommendation": insight["recommendations"][0]
     }
+
+
+
+
+
+
+
+
+@app.get("/links")
+def get_links():
+    return {
+        "links": list(CONTENT_DB.keys())
+    }
+
+class LinkRequest(BaseModel):
+    link: str
+
+@app.post("/content/link")
+def get_content_by_link(req: LinkRequest):
+    if req.link not in CONTENT_DB:
+        return {"error": "Link not found"}
+
+    return CONTENT_DB[req.link]
+
+@app.post("/analyze/link")
+def analyze_by_link(req: LinkRequest):
+    if req.link not in CONTENT_DB:
+        return {"error": "Link not found"}
+
+    base_output = CONTENT_DB[req.link]
+    return generate_wording(base_output)
+
+@app.post("/analyze/raw")
+def analyze_raw(signals: Dict[str, Any]):
+    return generate_wording(signals)

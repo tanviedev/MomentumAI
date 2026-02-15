@@ -7,6 +7,7 @@ export default function PostTimeline() {
   const [posts, setPosts] = useState([]);
   const [analysis, setAnalysis] = useState(null);
   const [reviewed, setReviewed] = useState(new Set());
+  const [selectedId, setSelectedId] = useState(null);
 
   useEffect(() => {
     fetchDashboard();
@@ -23,6 +24,7 @@ export default function PostTimeline() {
   }
 
   async function analyzePost(contentId) {
+    setSelectedId(contentId);
     try {
       const res = await fetch(`${API_BASE}/content/${contentId}`);
       const data = await res.json();
@@ -31,6 +33,7 @@ export default function PostTimeline() {
       console.error("Analysis failed:", err);
     }
   }
+
 
   function toggleReviewed(contentId) {
     const updated = new Set(reviewed);
@@ -58,83 +61,90 @@ export default function PostTimeline() {
   }
 
   return (
-    <div>
-      <header>
+    <div className="app">
+      <header className="header">
         <h1>AI Engagement Analyst</h1>
-        <button onClick={nextPost}>Next post to improve →</button>
+        <button className="primary-btn" onClick={nextPost}>
+          Next post to improve →
+        </button>
       </header>
 
-      <main>
-        <section>
+      <div className="layout">
+        {/* LEFT PANEL */}
+        <section className="panel posts">
           <h2>Needs Attention</h2>
 
           {posts.length === 0 && <p>No posts need attention 🎉</p>}
 
-          <ul>
-            {posts.map((post) => {
-              const isReviewed = reviewed.has(post.content_id);
+          {posts.map((post) => {
+            const isReviewed = reviewed.has(post.content_id);
 
-              return (
-                <li
-                  key={post.content_id}
-                  style={{
-                    opacity: isReviewed ? 0.5 : 1,
-                    textDecoration: isReviewed ? "line-through" : "none",
-                  }}
-                >
-                  <div onClick={() => analyzePost(post.content_id)}>
-                    <strong>ID: {post.content_id}</strong>
-                    <div className="hint">
-                      Priority: {post.priority}
-                    </div>
-                    <div className="hint">
-                      Hint: {post.hint}
-                    </div>
-                  </div>
+            return (
+              <div
+                key={post.content_id}
+                className={`post-card 
+                      ${isReviewed ? "reviewed" : ""} 
+                      ${selectedId === post.content_id ? "active" : ""}`}
+              >
+                <div className="post-header">
+                  <strong>ID: {post.content_id}</strong>
+                  <span className={`priority-badge`}>
+                    {post.priority}
+                  </span>
 
-                  <label style={{ marginTop: "6px", display: "block" }}>
-                    <input
-                      type="checkbox"
-                      checked={isReviewed}
-                      onChange={() => toggleReviewed(post.content_id)}
-                    />{" "}
-                    Mark as reviewed
-                  </label>
-                </li>
-              );
-            })}
-          </ul>
+                </div>
+
+                <p className="hint">Hint: {post.hint}</p>
+
+                <label className="review-label">
+                  <input
+                    type="checkbox"
+                    checked={isReviewed}
+                    onChange={(e) => {
+                      e.stopPropagation();
+                      toggleReviewed(post.content_id);
+                    }}
+                  />
+                  <span>Mark as reviewed</span>
+                </label>
+
+              </div>
+            );
+          })}
         </section>
 
-        <section>
+        {/* RIGHT PANEL */}
+        <section className="panel analysis">
           <h2>Content Analysis</h2>
 
           {analysis ? (
-            <div>
-              <p>
-                <strong>Performance:</strong> {analysis.performance}
-              </p>
+            <div className="analysis-card">
+              <div className="metric">
+                <strong>Performance</strong>
+                <span>{analysis.performance}</span>
+              </div>
 
-              <p>
-                <strong>Success Driver:</strong>{" "}
-                {analysis.analysis.success_driver}
-              </p>
+              <div className="metric">
+                <strong>Success Driver</strong>
+                <span>{analysis.analysis.success_driver}</span>
+              </div>
 
-              <p>
-                <strong>Recommendation:</strong>{" "}
-                {analysis.analysis.recommendations[0]}
-              </p>
+              <div className="metric">
+                <strong>Recommendation</strong>
+                <span>{analysis.analysis.recommendations[0]}</span>
+              </div>
 
-              <p>
-                <strong>Confidence:</strong>{" "}
-                {analysis.analysis.confidence}
-              </p>
+              <div className="metric">
+                <strong>Confidence</strong>
+                <span>{analysis.analysis.confidence}</span>
+              </div>
             </div>
           ) : (
             <p>Select a post to see analysis.</p>
           )}
         </section>
-      </main>
+      </div>
     </div>
   );
+
 }

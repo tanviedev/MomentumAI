@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://deployment-backend-42oa.onrender.com";
 
 export default function PostTimeline() {
   const [posts, setPosts] = useState([]);

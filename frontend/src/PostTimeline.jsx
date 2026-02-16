@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-const API_BASE = "https://deployment-backend-42oa.onrender.com";
+const API_BASE = "https://shrexx-momentum-ai.hf.space";
 
 export default function PostTimeline() {
   const [posts, setPosts] = useState([]);

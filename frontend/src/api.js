@@ -1,4 +1,4 @@
-const API_BASE = "https://deployment-backend-42oa.onrender.com";
+const API_BASE = "https://shrexx-momentum-ai.hf.space";
 
 //Post Timeline jsx
 export async function fetchDashboard() {

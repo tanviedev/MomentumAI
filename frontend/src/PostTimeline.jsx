@@ -15,7 +15,7 @@ export default function PostTimeline() {
 
   async function fetchDashboard() {
     try {
-      const res = await fetch(`${API_BASE}/dashboard/`);
+      const res = await fetch(`${API_BASE}/dashboard`);
       const data = await res.json();
       setPosts(data.contents || []);
     } catch (err) {

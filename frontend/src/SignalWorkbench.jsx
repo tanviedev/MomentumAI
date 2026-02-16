@@ -240,7 +240,7 @@ export default function SignalWorkbench() {
             <div className="insight-item">
               <div className="insight-title">Recommended Actions</div>
               <ul className="insight-muted">
-                {insights.llm_insight.recommended_actions.map((a, i) => (
+                {insights.llm_insight.recommendations.map((a, i) => (
                   <li key={i}>• {a}</li>
                 ))}
               </ul>
